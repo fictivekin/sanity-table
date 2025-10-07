@@ -1,5 +1,5 @@
 import { RemoveIcon } from '@sanity/icons';
-import { Box, Button, TextInput } from '@sanity/ui';
+import { Box, Button, TextArea } from '@sanity/ui';
 import type { FormEvent } from 'react';
 
 import type { TableRow } from './TableComponent';
@@ -22,7 +22,7 @@ export const TableInput = (props: TableInputProps) => {
     function RowCell(cell: string, cellIndex: number) {
       return (
         <td key={`cell-${rowIndex}-${cellIndex}`}>
-          <TextInput
+          <TextArea
             fontSize={1}
             padding={3}
             value={cell}
