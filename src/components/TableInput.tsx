@@ -7,7 +7,7 @@ import type { TableRow } from './TableComponent';
 interface TableInputProps {
   rows: TableRow[];
   updateCell: (
-    e: FormEvent<HTMLInputElement>,
+    e: FormEvent<HTMLTextAreaElement>,
     rowIndex: number,
     cellIndex: number
   ) => void;

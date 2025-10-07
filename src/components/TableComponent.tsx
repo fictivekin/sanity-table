@@ -172,7 +172,7 @@ export const TableComponent = (props: TableProps & { rowType?: string }) => {
   };
 
   const updateCell = (
-    e: FormEvent<HTMLInputElement>,
+    e: FormEvent<HTMLTextAreaElement>,
     rowIndex: number,
     cellIndex: number
   ) => {
@@ -181,7 +181,7 @@ export const TableComponent = (props: TableProps & { rowType?: string }) => {
     }
     const newValue = deepClone(value);
     newValue.rows[rowIndex].cells[cellIndex] = (
-      e.target as HTMLInputElement
+      e.target as HTMLTextAreaElement
     ).value;
     return updateValue(newValue);
   };

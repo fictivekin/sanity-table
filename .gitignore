@@ -56,8 +56,5 @@ yalc.lock
 ##npm package zips
 *.tgz
 
-# Compiled plugin
-lib
-
 .eslintcache
 tsconfig.tsbuildinfo
